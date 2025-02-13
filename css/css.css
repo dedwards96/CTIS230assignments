@@ -34,6 +34,10 @@ a:link {
     color: darkgreen;
     text-decoration: solid;
 }
+a:visited {
+    color: darkviolet;
+    text-decoration: solid;
+}
 a:hover {
     color: aqua;
     text-decoration: solid;
@@ -42,7 +46,4 @@ a:active {
     color: navy;
     text-decoration: solid;
 }
-a:visited {
-    color: darkviolet;
-    text-decoration: solid;
-}
+
