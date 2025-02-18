@@ -29,6 +29,11 @@ img#bottombook {
     margin-bottom: 20px;
 }
 
+img#midbook {
+    width: 40%;
+    float:right;
+}
+
 h1 {
     background-color: rgb(28, 28, 182);
     color: white;
