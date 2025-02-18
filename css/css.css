@@ -1,49 +1,108 @@
-
 body {
-    color: blue;
-    background-color: #faf2e4;
+    color: rgb(35, 33, 33);
+    background-color: #d9d2c5;
     margin: 0 10%;
-    font-family:Cambria,Georgia,"Book Antiqua",serif;
+    font-family: Cambria, Georgia, "Book Antiqua", serif;
     font-size: 1em;
+    text-align: center;
 }
-em {
-    background-color: mediumpurple;
-    font-weight: bold;
+
+header {
+    color: white;
+}
+div.flexible {  
+    display:flex;
+}
+
+img#topbook {
+    float: right;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 30px;
+    width: 40%;
+    height: 60%;
+}
+
+img#bottombook {
+    width: 20%;
+    margin-bottom: 20px;
 }
 
 h1 {
-    background-color: silver;
-    color: green;
-    text-align: center;
+    background-color: rgb(28, 28, 182);
+    color: white;
     font-weight: bolder;
     font-style: italic;
     text-transform: uppercase;
-    border-bottom: 1px solid #57b1dc;
-    margin-top: 30px;
-}
-h2 {
+    border-color: silver;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: block;
+    margin: 0 auto;
     text-align: center;
-    font-size: 1.3em;
 }
+
+h2 em {
+    background-color: rgb(28, 28, 182);
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    font-style:italic;
+}
+
+h2, h3 {
+    text-align: center;
+    color: white;
+}
+
 p {
-    color: navy;
     text-align: left;
     font-size: larger;
 }
-a:link {
-    color: darkgreen;
-    text-decoration: solid;
+
+p.outro {
+    color: rgb(82, 31, 190);
+    font-style: italic;
+    font-weight: bold;
 }
-a:visited {
-    color: darkviolet;
-    text-decoration: solid;
+
+.links {
+    float:left;
+    margin-top: 20px;
 }
+
+a {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    background-color: darkgreen;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid darkgreen;
+}
+
 a:hover {
-    color: aqua;
-    text-decoration: solid;
+    background-color: green;
+    border-color: green;
 }
+
 a:active {
-    color: navy;
-    text-decoration: solid;
+    background-color: darkorchid;
+    border-color: darkorchid;
+}
+
+footer {
+    color: white;
+    background-color: rgb(28, 28, 182);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
