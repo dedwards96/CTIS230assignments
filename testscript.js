@@ -59,3 +59,13 @@ function onReset() {
 }
 //Reset all changes made by the buttons and text entry box
 
+// Add event listener for expandimage
+expandImage = document.getElementById("expandimage");
+
+expandImage.addEventListener("click", toggleImageSize);
+
+function toggleImageSize() {
+    expandImage.classList.toggle("expanded");
+}
+
+
