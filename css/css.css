@@ -12,16 +12,18 @@ header {
 }
 div.flexible {  
     display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 img#topbook {
-    float: right;
     display: block; 
     margin-left: auto; 
     margin-right: auto; 
     margin-top: 30px;
     width: 40%;
-    height: 60%;
+    height: auto;
 }
 
 img#bottombook {
@@ -45,14 +47,9 @@ h1 {
     padding: 10px 15px;
     display: block;
     margin: 0 auto;
-    text-align: center;
 }
 
 h2 em {
-    background-color: rgb(28, 28, 182);
-    padding: 10px 15px;
-    border-radius: 5px;
-    display: inline-block;
     font-weight: bold;
     font-style:italic;
 }
@@ -105,9 +102,28 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     padding: 10px;
     max-width: 600px;
     margin: 0 auto;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    body {
+        margin: 0 5%;
+    }
+    img#topbook {
+        width: 80%;
+        margin-top: 20px;
+    }
+    img#bottombook {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    footer {
+        padding: 20px;
+        max-width: 100%;
+    }
 }
 
