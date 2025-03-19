@@ -33,7 +33,8 @@ img#bottombook {
 
 img#midbook {
     width: 40%;
-    float:right;
+    float: right;
+    margin-left: 20px;
 }
 
 h1 {
@@ -51,7 +52,16 @@ h1 {
 
 h2 em {
     font-weight: bold;
-    font-style:italic;
+    font-style: italic;
+    background-color: rgb(28, 28, 182);
+    color: white;
+    font-style: italic;
+    text-transform: uppercase;
+    border-color: silver;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: block;
+    margin: 0 auto;
 }
 
 h2, h3 {
@@ -71,7 +81,7 @@ p.outro {
 }
 
 .links {
-    float:left;
+    float: left;
     margin-top: 20px;
 }
 
@@ -121,9 +131,39 @@ footer {
         width: 50%;
         margin-bottom: 10px;
     }
+    img#midbook {
+        width: 80%;
+        float: none;
+        display: block;
+        margin: 20px auto;
+    }
     footer {
         padding: 20px;
         max-width: 100%;
+    }
+}
+
+/* Media query for larger screens */
+@media (min-width: 601px) {
+    body {
+        margin: 0 10%;
+    }
+    img#topbook {
+        width: 40%;
+        margin-top: 30px;
+    }
+    img#bottombook {
+        width: 20%;
+        margin-bottom: 20px;
+    }
+    img#midbook {
+        width: 40%;
+        float: right;
+        margin-left: 20px;
+    }
+    footer {
+        padding: 10px;
+        max-width: 600px;
     }
 }
 
